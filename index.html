@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--META TAG START-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--META TAG END-->
+
+    <script src="/js/light-theme-toggle.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/style.css">
+
+
+    <!--FAVICON-->
+    <link rel="icon" type="image/x-icon" href="/image/"> 
+    
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+    <!--META TAG START-->
+    <meta name="author" content="Cahit Doğan">
+    <meta name="description" content="Minimalistic blog template">
+
+    <!--TITLE START--> 
+    <title>Viator Blog Template</title>    
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/homepage.css">
+</head>
+
+
+
+
+
+
+<body>
+    <!--*HEADER START-->
+    <header>
+        <button id="search-button" class="search-button icon-button" onclick="openerWithClickBlocker('search-bar-container')" aria-label="search in site"></button>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li id="flyout-menu-container">
+                <span href="">CATEGORIES</span>
+                <ul id="flyout-menu">
+                    <li><a href="/philosophy.html">Philosophy</a></li>
+                    <li><a href="/science.html">Science</a></li>
+                    <li><a href="/technology.html">Technology</a></li>
+                    <li><a href="/health.html">Health</a></li>
+                    <li><a href="/sport.html">Sport</a></li>
+                    <li><a href="/art.html">Art</a></li>
+                </ul>
+            </li>
+            <li><a href="/about.html">ABOUT</a></li>
+        </ul>
+        <button class="subscribe-button text-icon-button">
+            <img src="/image/email.svg" alt="subscribe icon" id="dark-theme-subscribe-button-svg">
+            <img src="/image/email-black.svg" alt="subscribe icon" id="light-theme-subscribe-button-svg">
+            <span>SUBSCRIBE</span>
+        </button>
+        <button id="light-mode-button" class="night-mode icon-button" onclick="switchTheme();" aria-label="switch theme mode"></button>
+        <div id="logo"> <a href="/index.html">VIATOR</a></div>
+        <button class="burger-menu icon-button" onclick="openerWithClickBlocker('mobile-menu')" aria-label="navigation menu"></button>
+    </header>
+
+
+    <!--*MAIN START-->
+    <main>
+        <section id="hero-section">
+            <article>
+                <a href="/articles/article.html">
+                    <img
+                        srcset="
+                            /image/photos/hero-image-600w.webp 600w,
+                            /image/photos/hero-image-950w.webp 950w,
+                            /image/photos/hero-image-1100w.webp 1100w"
+                        sizes="
+                            (max-width: 650px) 600px,
+                            (min-width: 650px) and (max-width: 992px) 950px,
+                            (min-width: 992px) 1100px"
+                        src="/image/photos/hero-image-1100w.webp"
+                        alt="Template hero image">
+                </a>
+                <div>
+                    <time datatime="2023-04-17">17 Apr 2023 </time>
+                    <h2><a href="/articles/article.html">Embracing Minimalism: Discovering the Benefits of a Simpler Life</a></h2>
+                    <p>In a world that often promotes excess and consumerism, the concept of minimalism has emerged as a refreshing and transformative<span>...</span></p>
+                </div>
+            </article>
+        </section>
+
+        <h3>Latest articles</h3>
+
+        <section id="articles-grid">
+            <article>
+                <a href="/articles/article.html">
+                    <img src="/image/photos/hero-image-600w.webp" alt="Template image" >
+                </a>
+                <h2><a href="/articles/article.html"> Lorem, ipsum dolor.</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, ullam.</p>
+                <time datatime="2023-04-17">17 Apr 2023</time>
+            </article>
+
+            <article>
+                <a href="/articles/article.html">
+                    <img src="/image/photos/image-1-600w.webp" alt="Template image" >
+                </a>
+                <h2><a href=""> Lorem, ipsum dolor.</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, ullam.</p>
+                <time datatime="2023-04-17">17 Apr 2023 </time>
+            </article>
+
+            <article>
+                <a href="/articles/article.html">
+                    <img src="/image/photos/image-2-600w.webp" alt="Template image" >
+                </a>
+                <h2><a href=""> Lorem, ipsum dolor.</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, ullam.</p>
+                <time datatime="2023-04-17">17 Apr 2023 </time>
+            </article>
+
+            <article>
+                <a href="/articles/article.html">
+                    <img src="/image/photos/image-3-600w.webp" alt="Template image" >
+                </a>
+                <h2><a href=""> Lorem, ipsum dolor.</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, ullam.</p>
+                <time datatime="2023-04-17">17 Apr 2023 </time>
+            </article>
+
+            <article>
+                <a href="/articles/article.html">
+                    <img src="/image/photos/image-4-600w.webp" alt="Template image" >
+                </a>
+                <h2><a href=""> Lorem, ipsum dolor.</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, ullam.</p>
+                <time datatime="2023-04-17">17 Apr 2023 </time>
+            </article>
+
+            <article>
+                <a href="/articles/article.html">
+                    <img src="/image/photos/image-5-600w.webp" alt="Template image" >
+                </a>
+                <h2><a href=""> Lorem, ipsum dolor.</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, ullam.</p>
+                <time datatime="2023-04-17">17 Apr 2023 </time>
+            </article>
+
+            <article>
+                <a href="/articles/article.html">
+                    <img src="/image/photos/image-6-600w.webp" alt="Template image" >
+                </a>
+                <h2><a href=""> Lorem, ipsum dolor.</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, ullam.</p>
+                <time datatime="2023-04-17">17 Apr 2023 </time>
+            </article>
+
+            <article>
+                <a href="/articles/article.html">
+                    <img src="/image/photos/image-7-600w.webp" alt="Template image" >
+                </a>
+                <h2><a href=""> Lorem, ipsum dolor.</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, ullam.</p>
+                <time datatime="2023-04-17">17 Apr 2023 </time>
+            </article>
+
+            <article>
+                <a href="/articles/article.html">
+                    <img src="/image/photos/image-8-600w.webp" alt="Template image" >
+                </a>
+                <h2><a href=""> Lorem, ipsum dolor.</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, ullam.</p>
+                <time datatime="2023-04-17">17 Apr 2023 </time>
+            </article>
+
+            <article>
+                <a href="/articles/article.html">
+                    <img src="/image/photos/image-9-600w.webp" alt="Template image" >
+                </a>
+                <h2><a href=""> Lorem, ipsum dolor.</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, ullam.</p>
+                <time datatime="2023-04-17">17 Apr 2023 </time>
+            </article>
+        </section>
+        <nav>
+            <button aria-label="Previous page" title="Previous page">&lt;</button>
+            <button aria-label="Page 1">1</button>
+            <button aria-label="Page 2">2</button>
+            <button aria-label="Page 3">3</button>
+            <button aria-label="Page 4">4</button>
+            <button aria-label="Next page" title="Next page">&gt;</button>
+        </nav>
+    </main>
+
+
+
+    <!--*FOOTER START-->
+    <footer>
+        <section id="subscribe">
+            <h4>Subscribe</h4>
+            <form action="">
+                <input type="email" name="email" id="email" placeholder="person@example.com" aria-label="e-mail adress">
+                <input type="submit" value="" id="submit" class="icon-button" aria-label="submit">
+            </form>
+        </section>
+    
+        <section id="social-media">
+            <h4>Social Media</h4>
+            <div class="social-media-links">
+                <a href="" class="icon-button"></a>
+                <a href="" class="icon-button"></a>
+                <a href="" class="icon-button"></a>
+                <a href="" class="icon-button"></a>
+            </div>
+        </section>
+    
+        <section id="quick-links">
+            <h4>Quick Menu</h4>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/categories-list-mobile.html">Categories</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </section>
+    
+        <section id="copyright">
+            <p>Copyright ©2023 <br> All rights reserved.</p>
+            <h4>VIATOR</h4>
+        </section>
+    </footer>
+    
+
+
+
+    <!--*ADDITIONAL ELEMENTS START-->
+    <form id="search-bar-container" action="">
+        <input type="search" name="" id="search-bar" placeholder="Search in site..." aria-label="text for search in site">
+        <input type="submit" value="" class="icon-button" aria-label="submit">
+    </form>
+    
+    
+    <div id="mobile-menu">
+        <button id="closer" class="icon-button" onclick="closerWithClickBlocker('mobile-menu')" aria-label="Close"></button>
+    
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li id="mobile-categories-container">
+                <button id="categories-button">Categories</button> 
+                <ul id="mobile-categories-list">
+                    <li><a href="/philosophy.html">Philosophy</a></li>
+                    <li><a href="/science.html">Science</a></li>
+                    <li><a href="/technology.html">Technology</a></li>
+                    <li><a href="/health.html">Health</a></li>
+                    <li><a href="/sport.html">Sport</a></li>
+                    <li><a href="/art.html">Art</a></li>
+                </ul>
+            </li>
+            <li><a href="/about.html">About</a></li>
+        </ul>
+    
+        <button class="text-icon-button">
+            <img src="/image/email.svg" alt="icon of button">
+            <span>Subscribe</span>
+        </button>
+    
+        <button class="text-icon-button" id="mobile-light-mode-button" onclick="switchTheme()" aria-label="Light mode">
+            <img src="/image/light-mode.svg" alt="icon of button">
+            <span>Dark/Light</span>
+        </button>
+    
+        <h4>Social Media</h4>
+        <div class="social-media-links" id="mobile-social-media-links">
+            <a href="" class="icon-button"></a>
+            <a href="" class="icon-button"></a>
+            <a href="" class="icon-button"></a>
+            <a href="" class="icon-button"></a>
+        </div>
+    </div>
+    
+    
+    <div id="click-blocker"></div>
+
+
+
+    <!--*SCRIPTS START-->
+    <script src="js/main.js"></script>
+    <noscript>Sorry, your browser does not support JavaScript.</noscript>
+
+</body>
+</html>

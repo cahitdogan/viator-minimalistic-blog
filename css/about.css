@@ -1,0 +1,101 @@
+main > #author-pfp {
+    border-radius: 100%;
+    display: block;
+    margin: 2.5rem auto 2rem auto;
+}
+
+main > h1 {
+    font-size: 3.4rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+main > div#job {
+    font-size: 1.55rem;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+main > h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+}
+
+main > #social-media-link-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+main > #social-media-link-buttons > a {
+    width: 100%;
+    border: 1px solid var(--LightGray);
+    border-radius: 0.8rem;
+    padding: 0.8rem 0;
+
+    font-size: 2rem;
+    background-repeat: no-repeat;
+    background-position: 0.5rem;
+    background-size: 2.9rem;
+    text-align: center;
+
+    transition: 0.15s;
+}
+
+main > #social-media-link-buttons > a:hover {
+    box-shadow: 0 0 1rem var(--LightGray);
+}
+
+main > #social-media-link-buttons > a:nth-child(1) {
+    background-image: url(/image/social-media/instagram.svg);
+}
+
+main > #social-media-link-buttons > a:nth-child(2) {
+    background-image: url(/image/social-media/twitter.svg);
+}
+
+main > #social-media-link-buttons > a:nth-child(3) {
+    background-image: url(/image/social-media/linkedin.svg);
+}
+
+main > #social-media-link-buttons > a:nth-child(4) {
+    background-image: url(/image/social-media/facebook.svg);
+}
+
+main > #about-me-container {
+    margin-bottom: 2rem;
+}
+
+main > #about-me-container > h2 {
+    font-size: 2.4rem;
+    border-bottom: 1px solid var(--Gray);
+    padding-bottom: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+main > #about-me-container > p {
+    font-size: 1.95rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (width >= 650px) {
+
+    main > #social-media-link-buttons > a {
+        width: 90%;
+    }
+
+    main > #about-me-container {
+        width: 90%;
+        margin: 0 auto 4rem auto;
+    }
+
+    main > #about-me-container > h2 {
+        margin-bottom: 2rem;
+    }
+}
