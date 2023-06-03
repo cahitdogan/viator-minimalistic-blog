@@ -536,7 +536,7 @@ footer #submit:hover {
         width: 20rem;
         border-radius: 0.8rem;
         background-color: var(--DarkGray);
-        box-shadow: 0 0.3rem 1rem rgb(59, 59, 59);
+        box-shadow: 0 0.3rem 0.6rem rgb(8, 8, 8);
         
         text-align: center;
         
