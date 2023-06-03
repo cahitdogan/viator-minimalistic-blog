@@ -151,6 +151,7 @@ header > ul, header > .subscribe-button, header > .night-mode {
     height: 100%;
     width: 7rem;
     border-radius: 0.6rem;
+    cursor: pointer;
 
     background-image: url(/image/submit.svg);
     background-color: var(--White);
