@@ -1,0 +1,220 @@
+#hero-section {
+    display: none;
+}
+
+#articles-grid img{
+    object-fit: cover;
+    width: 100%;
+}
+
+/***********************************************/
+
+h3 {
+    display: none;
+}
+
+#articles-grid > .part {
+    margin-top: 1.3rem;
+}
+
+#articles-grid > .part:nth-child(2) {
+    display: none;
+}
+
+#articles-grid > .part:nth-child(3) {
+    display: none;
+}
+
+#articles-grid > .part > article {
+    margin-bottom: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+#articles-grid > .part > article > a {
+    display: block;
+}
+
+#articles-grid > .part > article > a > img {
+    display: block;
+    aspect-ratio: 70 / 45;
+    border-radius: 0.8rem;
+}
+
+#articles-grid > .part > article > h2 > a {
+    font-size: 2.4rem;
+    font-weight: 400;
+    display: block;
+}
+
+#articles-grid > .part > article > p {
+    font-size: 1.9rem;
+    color: var(--Gray);
+}
+
+#articles-grid > .part > article > time {
+    font-size: 1.45rem;
+}
+
+main > nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+main > nav > button {
+    padding: 0.7rem 1.35rem;
+    border: 1px solid var(--LightGray);
+    border-radius: 0.6rem;
+    font-size: 1.55rem;
+
+    transition: 0.2s;
+}
+
+main > nav > button:hover {
+    background-color: var(--LightGray);
+    color: var(--Dark);
+}
+
+/***********************************************/
+
+@media screen and (width >= 650px) {
+
+    #hero-section {
+        display: block;
+        margin-bottom: 6rem;
+        margin-top: 1rem;
+        border: 0.1rem solid var(--Gray);
+        border-radius: 1.1rem;
+    }
+
+    #hero-section > article > a {
+        display: block;
+    } 
+    
+    #hero-section > article > a > picture > img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 40rem;
+        border-radius: 1.1rem 1.1rem 0 0;
+    }
+    
+    #hero-section div {
+        background-color: var(--DarkGray);
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+        border-radius: 0 0 1.1rem 1.1rem;
+
+        padding: 2rem;
+    }
+
+    #hero-section div > time {
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: var(--White);
+    }
+    
+    #hero-section div > h2 > a {
+        font-size: 2.30rem;
+        font-weight: 400;
+        display: block;
+    }
+
+    #hero-section div > h2 > a:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 0.1rem;
+        text-underline-offset: 1rem;
+    }
+    
+    #hero-section div > p {
+        font-size: 1.9rem;
+        font-weight: 400;
+        color: var(--Gray);
+    }
+
+/***********************/
+
+    h3 {  /*son eklenen yazılar*/
+        display: block;
+        font-size: 2.8rem;
+        font-weight: 400;
+        border-bottom: 1px solid var(--Gray);
+    }
+
+    #articles-grid > .part {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3.25rem;
+    }
+
+    #articles-grid > .part:first-child > article:nth-child(1) {
+        display: none;
+    }
+}
+
+@media screen and (width >= 992px) {
+    
+    #hero-section {
+        margin-top: 2rem;
+    }
+
+    #hero-section > article {
+        height: 50rem;
+        display: flex;
+    }
+
+    #hero-section > article > a {
+        height: auto;
+        flex-basis: 63%;
+    }
+
+    #hero-section > article > a > picture > img {
+        max-height: unset;
+        height: 100%;
+        border-radius: 1.1rem 0 0 1.1rem;
+    }
+
+    #hero-section > article > div {
+        flex-basis: 37%;
+        justify-content: space-around;
+        gap: 0rem;
+        padding: 5rem;
+        border-radius: 0 1.1rem 1.1rem 0;
+    }
+
+    #hero-section > article > div > h2 > a {
+        font-size: 2.9rem;
+    }
+
+    #hero-section div > p {
+        font-size: 1.85rem;
+    }
+
+/***********************/
+
+    #articles-grid > .part {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2.5rem;
+    }
+
+    #articles-grid > .part > article > h2 > a {
+        font-size: 2.25rem;
+    }
+
+    #articles-grid > .part > article > h2 > a:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 0.1rem;
+    }
+
+    #articles-grid > .part > article > p {
+        font-size: 1.75rem;
+    }
+
+/***********************/
+}

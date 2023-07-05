@@ -1,0 +1,157 @@
+* {
+    color: #000000 !important;
+}
+
+:root {
+    --Dark: #ffffff !important;
+    --DarkGray: #000000 !important;
+    --Gray: #000000 !important;
+    --LightGray: #000000 !important;
+    --White: #000000 !important;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(214, 214, 214) !important; 
+  }
+
+body {
+    background-color: var(--Dark) !important;
+}
+
+header > #light-mode-button {
+    background-image: url(/image/dark-mode.svg) !important;
+}
+
+header > #search-button {
+    background-image: url(/image/search-black.svg) !important;
+}
+
+header > .burger-menu {
+    background-image: url(/image/burger-black.svg) !important;
+}
+
+#search-bar {
+    background-color: white !important;
+    box-shadow: 0 0.3rem 0.6rem black !important;
+    background-image: url(/image/search-black.svg) !important;
+}
+
+#search-bar-container > input.icon-button {
+    background-color: white !important;
+}
+
+main > #articles-grid > article p {
+    color: black !important;
+}
+
+main > article * {
+    color: black !important;
+}
+
+main > article > blockquote{
+    background-color: rgb(201, 201, 201) !important;
+}
+
+main > nav > button:hover {
+    background-color: #d4d4d4 !important;
+}
+
+footer #email {
+    background-color: white !important;
+}
+
+footer > #subscribe #submit {
+    background-image: url(/image/submit.svg) !important;
+}
+
+#mobile-menu {
+    background-color: #1a1a1d !important;
+}
+
+#mobile-menu a, #mobile-menu button, #mobile-menu button span, #mobile-menu h4 {
+    color: #cdcdce !important;
+}
+
+#mobile-menu button {
+    border-color: white !important;
+}
+
+.social-media-links:not(#mobile-social-media-links) > a:nth-child(1) {
+    background-image: url(/image/social-media/facebook-black.svg) !important;
+}
+
+.social-media-links:not(#mobile-social-media-links) > a:nth-child(2) {
+    background-image: url(/image/social-media/twitter-black.svg) !important;
+}
+
+.social-media-links:not(#mobile-social-media-links) > a:nth-child(3) {
+    background-image: url(/image/social-media/instagram-black.svg) !important;
+}
+
+.social-media-links:not(#mobile-social-media-links) > a:nth-child(4) {
+    background-image: url(/image/social-media/linkedin-black.svg) !important;
+}
+
+#blog-post-section a {
+    color: rgb(36, 76, 187) !important;
+}
+
+main > #social-media-link-buttons > a:hover {
+    box-shadow: 0 0 1rem rgb(82, 82, 82) !important;
+}
+
+main > #social-media-link-buttons > a:nth-child(1) {
+    background-image: url(/image/social-media/instagram-black.svg) !important;
+}
+
+main > #social-media-link-buttons > a:nth-child(2) {
+    background-image: url(/image/social-media/twitter-black.svg) !important;
+}
+
+main > #social-media-link-buttons > a:nth-child(3) {
+    background-image: url(/image/social-media/linkedin-black.svg) !important;
+}
+
+main > #social-media-link-buttons > a:nth-child(4) {
+    background-image: url(/image/social-media/facebook-black.svg) !important;
+}
+
+main#categories-list-mobile > ul > li > a:hover {
+    background-color: #d2d2d8;
+}
+
+@media screen and (width >= 650px) {
+
+    #hero-section {
+        border: none !important;
+        background-color: transparent !important;
+    }
+    
+    #hero-section > article > div {
+        background-color: rgb(240, 240, 240) !important;
+    }
+
+}
+
+
+
+@media screen and (width >= 992px) {
+
+    header #flyout-menu {
+        background-color: var(--Dark) !important;
+        box-shadow: 0 0.5rem 0.8rem rgb(59, 59, 59) !important;
+    }
+
+    header #flyout-menu > li > a:hover {
+        background-color: rgb(233, 233, 233) !important;
+    }
+
+    header > .subscribe-button > img#dark-theme-subscribe-button-svg {
+        display: none !important;
+    }
+    
+    header > .subscribe-button > img#light-theme-subscribe-button-svg {
+        display: unset !important;
+    }
+    
+}

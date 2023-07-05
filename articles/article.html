@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--META TAG START-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--META TAG END-->
+
+    <script src="/js/light-theme-toggle.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/style.css">
+
+
+    <!--FAVICON-->
+    <link rel="icon" type="image/x-icon" href="/image/"> 
+    
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!--META TAG START-->
+    <meta name="author" content="Cahit Doğan">
+    <meta name="description" content="Article">
+
+    <!--TITLE START--> 
+    <title>Example blog article</title>    
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/articles.css">
+</head>
+
+<body>
+    <!--*HEADER START-->
+    <header>
+        <button id="search-button" class="search-button icon-button" onclick="openerWithClickBlocker('search-bar-container')" aria-label="search in site"></button>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li id="flyout-menu-container">
+                <span href="">CATEGORIES</span>
+                <ul id="flyout-menu">
+                    <li><a href="/philosophy.html">Philosophy</a></li>
+                    <li><a href="/philosophy.html">Science</a></li>
+                    <li><a href="/philosophy.html">Technology</a></li>
+                    <li><a href="/philosophy.html">Health</a></li>
+                    <li><a href="/philosophy.html">Sport</a></li>
+                    <li><a href="/philosophy.html">Art</a></li>
+                </ul>
+            </li>
+            <li><a href="/about.html">ABOUT</a></li>
+        </ul>
+        <button class="subscribe-button text-icon-button">
+            <img src="/image/email.svg" alt="subscribe icon" id="dark-theme-subscribe-button-svg">
+            <img src="/image/email-black.svg" alt="subscribe icon" id="light-theme-subscribe-button-svg">
+            <span>SUBSCRIBE</span>
+        </button>
+        <button id="light-mode-button" class="night-mode icon-button" onclick="switchTheme();" aria-label="switch theme mode"></button>
+        <div id="logo"> <a href="/index.html">VIATOR</a></div>
+        <button class="burger-menu icon-button" onclick="openerWithClickBlocker('mobile-menu')" aria-label="navigation menu"></button>
+    </header>
+
+
+    <!--*MAIN START-->
+    <main>
+        <article id="blog-post-section">
+            <h1>Embracing Minimalism: Discovering the Benefits of a Simpler Life</h1>
+
+            <div id="article-info-block">
+                <time datetime="2023-05-19">19 May 2023</time>
+                 / 
+                <span>Author: <a rel="author" href="/about.html">ChatGPT</a></span>
+                 / 
+                <span>4 min</span>
+            </div>
+
+            <p>In a world that often promotes excess and consumerism, the concept of minimalism has emerged as a refreshing and transformative lifestyle choice. Minimalism is more than just decluttering or owning fewer possessions; it is a mindset that emphasizes living intentionally, focusing on what truly matters, and simplifying various aspects of life. <i>In this article, we will explore what minimalism truly entails and delve into its remarkable benefits.</i></p>
+            <p><b>Minimalism is about intentionally simplifying your life by removing unnecessary clutter, distractions, and excesses.</b> It encourages individuals to examine their priorities, be mindful of their consumption habits, and eliminate anything that does not add value or joy to their lives. This can apply to physical possessions, relationships, commitments, and even digital clutter. By embracing minimalism, you cultivate a deliberate approach to life, making room for what truly matters to you.</p>
+            <img src="/image/photos/blog-post-image.webp" alt="a gray laptop, a notebook and black mobile phone on a table">
+            <hr>
+            <h2>Benefits of Minimalism</h2>
+            <ul>
+                <li><b>Enhanced Mental Clarity:</b> A cluttered environment often translates to a cluttered mind. Minimalism promotes mental clarity by eliminating distractions and reducing the overwhelm caused by excessive material possessions. With a simplified living space, you can focus better, improve productivity, and experience a greater sense of calm and tranquility.</li>
+                <li><b>Reduced Stress and Anxiety:</b> Minimalism helps in alleviating stress and anxiety levels. By prioritizing and simplifying your life, you minimize the demands and expectations placed upon yourself. Fewer possessions mean less to worry about, clean, and maintain. As a result, you can experience a lighter, freer, and more relaxed state of being.</li>
+            </ul>
+            <p>Embracing minimalism can have a positive impact on your finances. By reassessing your spending habits and adopting a more intentional approach to consumption, you can save money, reduce debt, and have more financial flexibility. Instead of accumulating possessions that provide temporary satisfaction, minimalism encourages investing in experiences and things that truly align with your values and long-term goals.</p>
+            <blockquote>Minimalism extends beyond material possessions and permeates into our relationships. By prioritizing quality over quantity, you can focus on nurturing meaningful connections with the people who matter most to you. Minimalism encourages open communication, deepens emotional bonds, and helps create a supportive and fulfilling social network.</blockquote>
+            
+            <p>In a world grappling with the consequences of overconsumption and excessive waste, minimalism offers an opportunity to reduce our environmental footprint. By curbing the desire for constant accumulation, we can reduce waste, conserve resources, and promote sustainable living. Minimalism encourages conscious consumption, opting for durable and <a href="#">eco-friendly products</a>, and embracing the philosophy of "less is more" for the benefit of the planet.</p>
+            <p>Minimalism is not just about owning fewer possessions; it is a deliberate choice to simplify your life, prioritize what truly matters, and create space for personal growth and fulfillment. By embracing minimalism, you can experience enhanced mental clarity, reduced stress, financial freedom, improved relationships, and make a positive impact on the environment. So why not embark on this transformative journey and discover the joys and benefits of living with less?</p>
+            
+        </article>
+    </main>
+
+
+
+    <!--*FOOTER START-->
+    <footer>
+        <section id="subscribe">
+            <h4>Subscribe</h4>
+            <form action="">
+                <input type="email" name="email" id="email" placeholder="person@example.com" aria-label="e-mail adress">
+                <input type="submit" value="" id="submit" class="icon-button" aria-label="submit">
+            </form>
+        </section>
+    
+        <section id="social-media">
+            <h4>Social Media</h4>
+            <div class="social-media-links">
+                <a href="https://www.facebook.com/" class="icon-button" aria-label="facebook"></a>
+                <a href="https://twitter.com/" class="icon-button" aria-label="twitter"></a>
+                <a href="https://www.instagram.com/" class="icon-button" aria-label="instagram"></a>
+                <a href="https://www.linkedin.com/" class="icon-button" aria-label="linkedin"></a>
+            </div>
+        </section>
+    
+        <section id="quick-links">
+            <h4>Quick Menu</h4>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/categories-list-mobile.html">Categories</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </section>
+    
+        <section id="copyright">
+            <p>Copyright ©2023 <br> All rights reserved.</p>
+            <h4>VIATOR</h4>
+        </section>
+    </footer>
+    
+
+
+
+    <!--*ADDITIONAL ELEMENTS START-->
+    <form id="search-bar-container" action="">
+        <input type="search" name="" id="search-bar" placeholder="Search in site..." aria-label="text for search in site">
+        <input type="submit" value="" class="icon-button" aria-label="submit">
+    </form>
+    
+    
+    <div id="mobile-menu">
+        <button id="closer" class="icon-button" onclick="closerWithClickBlocker('mobile-menu')" aria-label="Close"></button>
+    
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li id="mobile-categories-container">
+                <button id="categories-button">Categories</button> 
+                <ul id="mobile-categories-list">
+                    <li><a href="/philosophy.html">Philosophy</a></li>
+                    <li><a href="/philosophy.html">Science</a></li>
+                    <li><a href="/philosophy.html">Technology</a></li>
+                    <li><a href="/philosophy.html">Health</a></li>
+                    <li><a href="/philosophy.html">Sport</a></li>
+                    <li><a href="/philosophy.html">Art</a></li>
+                </ul>
+            </li>
+            <li><a href="/about.html">About</a></li>
+        </ul>
+    
+        <button class="text-icon-button">
+            <img src="/image/email.svg" alt="icon of button">
+            <span>Subscribe</span>
+        </button>
+    
+        <button class="text-icon-button" id="mobile-light-mode-button" onclick="switchTheme()" aria-label="Light mode">
+            <img src="/image/light-mode.svg" alt="icon of button">
+            <span>Dark/Light</span>
+        </button>
+    
+        <h4>Social Media</h4>
+        <div class="social-media-links" id="mobile-social-media-links">
+            <a href="https://www.facebook.com/" class="icon-button" aria-label="facebook"></a>
+            <a href="https://twitter.com/" class="icon-button" aria-label="twitter"></a>
+            <a href="https://www.instagram.com/" class="icon-button" aria-label="instagram"></a>
+            <a href="https://www.linkedin.com/" class="icon-button" aria-label="linkedin"></a>
+        </div>
+    </div>
+    
+    
+    <div id="click-blocker"></div>
+
+
+
+    <!--*SCRIPTS START-->
+    <script src="/js/main.js"></script>
+    <noscript>Sorry, your browser does not support JavaScript.</noscript>
+
+</body>
