@@ -1,4 +1,3 @@
-
 function openerWithClickBlocker(elementId) {
     const elementToOpen = document.getElementById(elementId);
     elementToOpen.style.display = "block";
@@ -33,16 +32,59 @@ button.addEventListener("click", function () {
 
 
 
+//**************************------PAGINATION------**************************
+
+let currentPage = 1;
+
+const page_1 = document.getElementById("pagination-part1");
+const page_2 = document.getElementById("pagination-part2");
+const page_3 = document.getElementById("pagination-part3");
+const paginationBar = document.getElementById("pagination-bar");
 
 
+function paginator(selectedPage) {
+
+    switch (selectedPage) {
+        case 1:
+            page_1.style.display = "grid";
+            page_2.style.display = "none";
+            page_3.style.display = "none";
+            break;
+    
+        case 2:
+            page_1.style.display = "none";
+            page_2.style.display = "grid";
+            page_3.style.display = "none";
+            break;
+        
+        case 3:
+            page_1.style.display = "none";
+            page_2.style.display = "none";
+            page_3.style.display = "grid";
+    }
+        
+    paginationBar.scrollIntoView({ block: "center" });
+    currentPage = selectedPage;
+}
 
 
+function prevNextPaginator(prevNext) {
 
+    let selectedPage;
 
+    switch (prevNext) {
 
-
-
-
-
-
-// Q: Why is the #logo element move right when the lightMode() function run?
+        case "prev":
+            if (currentPage !== 1) {
+                selectedPage = currentPage - 1;
+                paginator(selectedPage);
+            }
+            break;
+        
+        case "next":
+            if (currentPage !== 3) {
+                selectedPage = currentPage + 1;
+                paginator(selectedPage);
+            }
+    }
+}
