@@ -46,6 +46,7 @@ body {
     width: 92vw;
     max-width: 115rem;
     margin: auto;
+    transition: background-color 0.5s;
 }
 
 img {
