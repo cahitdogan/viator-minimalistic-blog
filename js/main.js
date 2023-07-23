@@ -88,31 +88,3 @@ function prevNextPaginator(prevNext) {
             }
     }
 }
-
-
-const anchors = document.querySelectorAll("a");
-
-// Bağlantıya tıklama olayını ele alın
-anchors.forEach(anchorElement => {
-    anchorElement.addEventListener('click', function(event) {
-        // Sayfanın varsayılan davranışını (yani linkin tıklanarak yüklenmesini) engelleyin
-        event.preventDefault();
-    
-        // Hedef sayfayı yükleyin
-        const hedefSayfa = this.getAttribute('href');
-        let xhr = new XMLHttpRequest();
-        xhr.open('GET', hedefSayfa, true);
-        xhr.onreadystatechange = function() {
-          if (xhr.readyState === 4 && xhr.status === 200) {
-            // Hedef sayfa yüklendiğinde, mevcut sayfanın içeriğini değiştirin
-            document.documentElement.innerHTML = xhr.responseText;
-            // İsteğe bağlı olarak, hedef sayfanın URL'sini güncellemeniz gerekebilir:
-            // history.pushState(null, '', hedefSayfa);
-    
-            // Artık hedef sayfadasınız ve geçiş işlemi tamamlandı!
-            // İsterseniz başka işlemler yapabilirsiniz.
-          }
-        };
-        xhr.send();
-      });
-});
