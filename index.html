@@ -15,8 +15,55 @@
 
 
     <!--CSS-->
-    <link rel="stylesheet" href="/css/style.css">
+    <link id="theme" rel="stylesheet" href="">
     <link rel="stylesheet" href="/css/homepage.css">
+
+    <script>
+            const localStorageTheme = localStorage.getItem("localStorageTheme");
+            const styleSheet = document.getElementById("theme");
+
+            switch (localStorageTheme) {
+                case "dark":
+                    themePicker("dark");
+                    break;
+
+                case "light":
+                    themePicker("light");
+                    break;
+
+                default:
+                    themePicker("dark");
+            }
+
+            function themePicker(theme) {
+                switch (theme) {
+                    case "dark":
+                        styleSheet.href = "/css/lightmode.css";
+                        localStorage.setItem("localStorageTheme", "dark");
+                        break;
+
+                    case "light":
+                        styleSheet.href = "/css/style.css";
+                        localStorage.setItem("localStorageTheme", "light");
+                        break;
+                }
+            }
+
+            function themeSwitcher() {
+
+                const currentTheme = localStorage.getItem("localStorageTheme");
+
+                switch (currentTheme) {
+                    case "dark":
+                        themePicker("light");
+                        break;
+
+                    case "light":
+                        themePicker("dark");
+                        break;
+                }
+            }
+    </script>
     
 
     <!--GOOGLE FONTS-->
@@ -59,7 +106,7 @@
             <img src="/image/email-black.svg" alt="subscribe icon" id="light-theme-subscribe-button-svg">
             <span>SUBSCRIBE</span>
         </button>
-        <button id="light-mode-button" class="night-mode icon-button" onclick="switchTheme();" aria-label="switch theme mode"></button>
+        <button id="light-mode-button" class="night-mode icon-button" onclick="themeSwitcher();" aria-label="switch theme mode"></button>
         <div id="logo"> <a href="/index.html">VIATOR</a></div>
         <button class="burger-menu icon-button" onclick="openerWithClickBlocker('mobile-menu')" aria-label="navigation menu"></button>
     </header>

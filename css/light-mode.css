@@ -1,119 +1,119 @@
 * {
-    color: #000000 !important;
+    color: #000000;
 }
 
 :root {
-    --Dark: #ffffff !important;
-    --DarkGray: #000000 !important;
-    --Gray: #000000 !important;
-    --LightGray: #000000 !important;
-    --White: #000000 !important;
+    --Dark: #ffffff;
+    --DarkGray: #000000;
+    --Gray: #000000;
+    --LightGray: #000000;
+    --White: #000000;
 }
 
 ::-webkit-scrollbar-track {
-    background: rgb(214, 214, 214) !important; 
-  }
+    background: rgb(214, 214, 214); 
+}
 
 body {
-    background-color: var(--Dark) !important;
+    background-color: var(--Dark);
 }
 
 header > #light-mode-button {
-    background-image: url(/image/dark-mode.svg) !important;
+    background-image: url(/image/dark-mode.svg);
 }
 
 header > #search-button {
-    background-image: url(/image/search-black.svg) !important;
+    background-image: url(/image/search-black.svg);
 }
 
 header > .burger-menu {
-    background-image: url(/image/burger-black.svg) !important;
+    background-image: url(/image/burger-black.svg);
 }
 
 #search-bar {
-    background-color: white !important;
-    box-shadow: 0 0.3rem 0.6rem black !important;
-    background-image: url(/image/search-black.svg) !important;
+    background-color: white;
+    box-shadow: 0 0.3rem 0.6rem black;
+    background-image: url(/image/search-black.svg);
 }
 
 #search-bar-container > input.icon-button {
-    background-color: white !important;
+    background-color: white;
 }
 
 main > #articles-grid > article p {
-    color: black !important;
+    color: black;
 }
 
 main > article * {
-    color: black !important;
+    color: black;
 }
 
 main > article > blockquote{
-    background-color: rgb(201, 201, 201) !important;
+    background-color: rgb(201, 201, 201);
 }
 
 main > nav > button:hover {
-    background-color: #d4d4d4 !important;
+    background-color: #d4d4d4;
 }
 
 footer #email {
-    background-color: white !important;
+    background-color: white;
 }
 
 footer > #subscribe #submit {
-    background-image: url(/image/submit.svg) !important;
+    background-image: url(/image/submit.svg);
 }
 
 #mobile-menu {
-    background-color: #1a1a1d !important;
+    background-color: #1a1a1d;
 }
 
 #mobile-menu a, #mobile-menu button, #mobile-menu button span, #mobile-menu h4 {
-    color: #cdcdce !important;
+    color: #cdcdce;
 }
 
 #mobile-menu button {
-    border-color: white !important;
+    border-color: white;
 }
 
 .social-media-links:not(#mobile-social-media-links) > a:nth-child(1) {
-    background-image: url(/image/social-media/facebook-black.svg) !important;
+    background-image: url(/image/social-media/facebook-black.svg);
 }
 
 .social-media-links:not(#mobile-social-media-links) > a:nth-child(2) {
-    background-image: url(/image/social-media/twitter-black.svg) !important;
+    background-image: url(/image/social-media/twitter-black.svg);
 }
 
 .social-media-links:not(#mobile-social-media-links) > a:nth-child(3) {
-    background-image: url(/image/social-media/instagram-black.svg) !important;
+    background-image: url(/image/social-media/instagram-black.svg);
 }
 
 .social-media-links:not(#mobile-social-media-links) > a:nth-child(4) {
-    background-image: url(/image/social-media/linkedin-black.svg) !important;
+    background-image: url(/image/social-media/linkedin-black.svg);
 }
 
 #blog-post-section a {
-    color: rgb(36, 76, 187) !important;
+    color: rgb(36, 76, 187);
 }
 
 main > #social-media-link-buttons > a:hover {
-    box-shadow: 0 0 1rem rgb(82, 82, 82) !important;
+    box-shadow: 0 0 1rem rgb(82, 82, 82);
 }
 
 main > #social-media-link-buttons > a:nth-child(1) {
-    background-image: url(/image/social-media/instagram-black.svg) !important;
+    background-image: url(/image/social-media/instagram-black.svg);
 }
 
 main > #social-media-link-buttons > a:nth-child(2) {
-    background-image: url(/image/social-media/twitter-black.svg) !important;
+    background-image: url(/image/social-media/twitter-black.svg);
 }
 
 main > #social-media-link-buttons > a:nth-child(3) {
-    background-image: url(/image/social-media/linkedin-black.svg) !important;
+    background-image: url(/image/social-media/linkedin-black.svg);
 }
 
 main > #social-media-link-buttons > a:nth-child(4) {
-    background-image: url(/image/social-media/facebook-black.svg) !important;
+    background-image: url(/image/social-media/facebook-black.svg);
 }
 
 main#categories-list-mobile > ul > li > a:hover {
@@ -123,12 +123,12 @@ main#categories-list-mobile > ul > li > a:hover {
 @media screen and (width >= 650px) {
 
     #hero-section {
-        border: none !important;
-        background-color: transparent !important;
+        border: none;
+        background-color: transparent;
     }
     
     #hero-section > article > div {
-        background-color: rgb(240, 240, 240) !important;
+        background-color: rgb(240, 240, 240);
     }
 
 }
@@ -138,20 +138,20 @@ main#categories-list-mobile > ul > li > a:hover {
 @media screen and (width >= 992px) {
 
     header #flyout-menu {
-        background-color: var(--Dark) !important;
-        box-shadow: 0 0.5rem 0.8rem rgb(59, 59, 59) !important;
+        background-color: var(--Dark);
+        box-shadow: 0 0.5rem 0.8rem rgb(59, 59, 59);
     }
 
     header #flyout-menu > li > a:hover {
-        background-color: rgb(233, 233, 233) !important;
+        background-color: rgb(233, 233, 233);
     }
 
     header > .subscribe-button > img#dark-theme-subscribe-button-svg {
-        display: none !important;
+        display: none;
     }
     
     header > .subscribe-button > img#light-theme-subscribe-button-svg {
-        display: unset !important;
+        display: unset;
     }
     
 }
