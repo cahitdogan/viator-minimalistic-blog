@@ -7,15 +7,33 @@
     background-color: transparent;
 
     font-family: 'Nunito Sans', sans-serif;
-    color: #cdcdce;
 }
 
-:root {
-    --Dark: #151516;
-    --DarkGray: #1a1a1d;
-    --Gray: #969797;
-    --LightGray: #cdcdce;
-    --White: #ffffff;
+:root.dark {
+    --text-color-primary: #cdcdcd;
+    --text-color-secondary: #979797;
+    --text-color-tertiary: #e7e7e7;
+    --text-color-article-header: #f2f2f2;
+    --text-color-link: #244cbb;
+    --bg-color-primary: #151516;
+    --bg-color-secondary: #1a1a1d;
+    --bg-color-blockquote: #2c2c30;
+    --bg-color-hover-categories: #2e2e33;
+}
+
+:root.light {
+    --text-color-primary: #1b1b1b;
+    --text-color-secondary: #1b1b1b;
+    --text-color-tertiary: #1b1b1b;
+    --text-color-article-header: #f2f2f2;
+    --text-color-link: #244cbb;
+    --bg-color-primary: #ffffff;
+    --bg-color-secondary: #e6deff;
+    --bg-color-hover-categories: #2e2e33;
+}
+
+.theme-transition {
+    transition: background-color 0.5s;
 }
 
 ::-webkit-scrollbar {
@@ -23,7 +41,7 @@
   }
 
 ::-webkit-scrollbar-track {
-    background: var(--DarkGray); 
+    background: var(--bg-color-secondary); 
   }
    
   /* Handle */
@@ -33,7 +51,7 @@
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555555; 
   }
 
 html {
@@ -41,11 +59,12 @@ html {
 }
 
 body {
-    background-color: var(--Dark);
+    background-color: var(--bg-color-primary);
     min-height: 100vh;
     width: 92vw;
     max-width: 115rem;
     margin: auto;
+    transition: unset;
 }
 
 img {
@@ -62,7 +81,7 @@ input {
 }
 
 input::placeholder {
-    color: var(--Gray);
+    color: var(--text-color-secondary);
 }
 
 ol, ul {
@@ -71,6 +90,14 @@ ol, ul {
 
 button {
     cursor: pointer;
+}
+
+a {
+    color: var(--text-color-primary);
+}
+
+button {
+    color: var(--text-color-primary);
 }
 
 .icon-button {
@@ -113,6 +140,7 @@ header > #logo > a {
     font-size: 1.9rem;
     font-weight: 700;
     letter-spacing: 0.4rem;
+    color: var(--text-color-primary);
 }
 
 header > ul, header > .subscribe-button, header > .night-mode {
@@ -136,7 +164,7 @@ header > ul, header > .subscribe-button, header > .night-mode {
     width: 90vw;
     max-width: 50rem;
     height: 6rem;
-    background-color: var(--White);
+    background-color: white;
     border-radius: 0.6rem;
     box-shadow: 0 0.2rem 0.5rem var(--DarkGray);
 
@@ -155,7 +183,7 @@ header > ul, header > .subscribe-button, header > .night-mode {
     cursor: pointer;
 
     background-image: url(/image/submit.svg);
-    background-color: var(--White);
+    background-color: white;
     background-size: 2.1rem;
 
     position: absolute;
@@ -188,7 +216,7 @@ header > ul, header > .subscribe-button, header > .night-mode {
 
     width: 23rem;
     height: 100vh;
-    background-color: var(--DarkGray);
+    background-color: var(--bg-color-secondary);
 
     animation-name: mobileMenuSlide;
     animation-duration: 0.5s;
@@ -220,6 +248,7 @@ header > ul, header > .subscribe-button, header > .night-mode {
     font-size: 2.25rem;
     display: block;
     padding: 0.7rem 0 0.7rem 2.5rem;
+    color: var(--text-color-primary);
 }
 
 #mobile-menu > ul > li > button {
@@ -246,7 +275,7 @@ header > ul, header > .subscribe-button, header > .night-mode {
 
 #mobile-menu #mobile-categories-list a {
     font-size: 2.05rem;
-    color: var(--Gray);
+    color: var(--text-color-secondary);
     display: block;
     padding: 0.3rem 0;
 }
@@ -261,7 +290,7 @@ header > ul, header > .subscribe-button, header > .night-mode {
     height: 3.65rem;
     gap: 0.8rem;
     font-size: 2.15rem;
-    border: 1px solid var(--Gray);
+    border: 1px solid var(--text-color-secondary);
     border-radius: 1rem;
     margin: auto;
     padding: 0.7rem 0;
@@ -276,7 +305,7 @@ header > ul, header > .subscribe-button, header > .night-mode {
     font-size: 2.25rem;
     font-weight: 400;
     text-align: center;
-    
+    color: var(--text-color-primary);
     margin-top: 4rem;
 }
 
@@ -301,7 +330,7 @@ footer {
 
     padding: 2rem 0;
 
-    border-top: 0.1rem solid var(--Gray);
+    border-top: 0.1rem solid var(--text-color-secondary);
 }
 
 footer > section {
@@ -314,6 +343,7 @@ footer > section {
 footer > section > h4 {
     font-size: 2.1rem;
     font-weight: 300;
+    color: var(--text-color-primary);
 }
 
 footer > section > form {
@@ -324,10 +354,10 @@ footer > section > form {
 footer > section > form > #email {
     height: 3.1rem;
     width: 100%;
-    background-color: var(--DarkGray);
-    border: 0.1rem solid var(--Gray);
+    background-color: var(--bg-color-secondary);
+    border: 0.1rem solid var(--text-color-secondary);
     border-radius: 0.5rem;
-    color: var(--LightGray);
+    color: var(--text-color-primary);
 
     padding-left: 1rem;
 }
@@ -384,6 +414,10 @@ footer #submit:hover {
     align-items: center;
 }
 
+#quick-links ul li {
+    color: var(--text-color-primary);
+}
+
 #quick-links a {
     font-size: 1.6rem;
     font-weight: 300;
@@ -398,6 +432,7 @@ footer #submit:hover {
     line-height: 2rem;
     font-size: 1.25rem;
     font-weight: 300;
+    color: var(--text-color-primary);
 }
 
 #copyright > h4 {
@@ -502,7 +537,6 @@ footer #submit:hover {
     header > ul > li > a {
         font-size: 1.25rem;
         padding: 1rem 0;
-
         position: relative;
     }
 
@@ -513,7 +547,7 @@ footer #submit:hover {
         position: absolute;
         bottom: 0.75rem;
 
-        background-color: var(--LightGray);
+        background-color: var(--text-color-primary);
         height: 0.1rem;
         width: 0%;
 
@@ -527,6 +561,7 @@ footer #submit:hover {
     header > ul > li > span {
         font-size: 1.25rem;
         padding: 1.3rem 0;
+        color: var(--text-color-primary);
     }
 
     header #flyout-menu-container {
@@ -537,7 +572,7 @@ footer #submit:hover {
         display: none;
         width: 20rem;
         border-radius: 0.8rem;
-        background-color: var(--DarkGray);
+        background-color: var(--bg-color-secondary);
         box-shadow: 0 0.3rem 0.6rem rgb(8, 8, 8);
         
         text-align: center;
@@ -565,7 +600,7 @@ footer #submit:hover {
     }
     
     header #flyout-menu > li > a:hover {
-        background-color: rgb(46, 46, 46);
+        background-color: var(--bg-color-hover-categories);
     }
 
     header #flyout-menu > li:first-child > a:hover {
@@ -577,7 +612,7 @@ footer #submit:hover {
     }
 
     header > .subscribe-button {
-        border: 0.1rem solid var(--LightGray);
+        border: 0.1rem solid var(--text-color-tertiary);
         border-radius: 1rem;
         padding: 0.5rem;
 

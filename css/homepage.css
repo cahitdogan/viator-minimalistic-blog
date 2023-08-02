@@ -11,6 +11,7 @@
 
 h3 {
     display: none;
+    color: var(--text-color-primary);
 }
 
 #articles-grid > .part {
@@ -51,11 +52,12 @@ h3 {
 
 #articles-grid > .part > article > p {
     font-size: 1.9rem;
-    color: var(--Gray);
+    color: var(--text-color-secondary);
 }
 
 #articles-grid > .part > article > time {
     font-size: 1.45rem;
+    color: var(--text-color-tertiary);
 }
 
 main > nav {
@@ -68,7 +70,7 @@ main > nav {
 
 main > nav > button {
     padding: 0.7rem 1.35rem;
-    border: 1px solid var(--LightGray);
+    border: 1px solid var(--text-color-primary);
     border-radius: 0.6rem;
     font-size: 1.55rem;
 
@@ -76,8 +78,8 @@ main > nav > button {
 }
 
 main > nav > button:hover {
-    background-color: var(--LightGray);
-    color: var(--Dark);
+    background-color: var(--text-color-primary);
+    color: var(--bg-color-primary);
 }
 
 /***********************************************/
@@ -88,7 +90,7 @@ main > nav > button:hover {
         display: block;
         margin-bottom: 6rem;
         margin-top: 1rem;
-        border: 0.1rem solid var(--Gray);
+        border: 0.1rem solid var(--text-color-secondary);
         border-radius: 1.1rem;
     }
 
@@ -104,7 +106,7 @@ main > nav > button:hover {
     }
     
     #hero-section div {
-        background-color: var(--DarkGray);
+        background-color: var(--bg-color-secondary);
         display: flex;
         flex-direction: column;
         gap: 1.4rem;
@@ -116,7 +118,7 @@ main > nav > button:hover {
     #hero-section div > time {
         font-size: 1.4rem;
         font-weight: 300;
-        color: var(--White);
+        color: var(--text-color-tertiary);
     }
     
     #hero-section div > h2 > a {
@@ -134,7 +136,7 @@ main > nav > button:hover {
     #hero-section div > p {
         font-size: 1.9rem;
         font-weight: 400;
-        color: var(--Gray);
+        color: var(--text-color-secondary);
     }
 
 /***********************/
@@ -143,7 +145,7 @@ main > nav > button:hover {
         display: block;
         font-size: 2.8rem;
         font-weight: 400;
-        border-bottom: 1px solid var(--Gray);
+        border-bottom: 1px solid var(--text-color-secondary);
     }
 
     #articles-grid > .part {

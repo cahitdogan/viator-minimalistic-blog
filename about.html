@@ -15,55 +15,8 @@
 
 
     <!--CSS-->
-    <link id="theme" rel="stylesheet" href="">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/about.css">
-
-    <script>
-        const localStorageTheme = localStorage.getItem("localStorageTheme");
-            const styleSheet = document.getElementById("theme");
-
-            switch (localStorageTheme) {
-                case "dark":
-                    themePicker("dark");
-                    break;
-
-                case "light":
-                    themePicker("light");
-                    break;
-
-                default:
-                    themePicker("dark");
-            }
-
-            function themePicker(theme) {
-                switch (theme) {
-                    case "dark":
-                        styleSheet.href = "/css/lightmode.css";
-                        localStorage.setItem("localStorageTheme", "dark");
-                        break;
-
-                    case "light":
-                        styleSheet.href = "/css/style.css";
-                        localStorage.setItem("localStorageTheme", "light");
-                        break;
-                }
-            }
-
-            function themeSwitcher() {
-
-                const currentTheme = localStorage.getItem("localStorageTheme");
-
-                switch (currentTheme) {
-                    case "dark":
-                        themePicker("light");
-                        break;
-
-                    case "light":
-                        themePicker("dark");
-                        break;
-                }
-            }
-    </script>
     
 
     <!--GOOGLE FONTS-->
@@ -80,6 +33,13 @@
 
 
 <body>
+    <!--*THEME-->
+    <script> 
+        const theme = localStorage.getItem("theme") || "dark";
+        const root = document.documentElement;  //root element
+        root.classList.add(theme);
+    </script>
+    
     <!--*HEADER START-->
     <header>
         <button id="search-button" class="search-button icon-button" onclick="openerWithClickBlocker('search-bar-container')" aria-label="search in site"></button>
@@ -103,7 +63,7 @@
             <img src="/image/email-black.svg" alt="subscribe icon" id="light-theme-subscribe-button-svg">
             <span>SUBSCRIBE</span>
         </button>
-        <button id="light-mode-button" class="night-mode icon-button" onclick="switchTheme();" aria-label="switch theme mode"></button>
+        <button id="light-mode-button" class="night-mode icon-button" onclick="pickTheme();" aria-label="switch theme mode"></button>
         <div id="logo"> <a href="/index.html">VIATOR</a></div>
         <button class="burger-menu icon-button" onclick="openerWithClickBlocker('mobile-menu')" aria-label="navigation menu"></button>
     </header>
@@ -202,7 +162,7 @@
             <span>Subscribe</span>
         </button>
     
-        <button class="text-icon-button" id="mobile-light-mode-button" onclick="switchTheme()" aria-label="Light mode">
+        <button class="text-icon-button" id="mobile-light-mode-button" onclick="pickTheme()" aria-label="Light mode">
             <img src="/image/light-mode.svg" alt="icon of button">
             <span>Dark/Light</span>
         </button>
