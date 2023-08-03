@@ -19,6 +19,17 @@
     --bg-color-secondary: #1a1a1d;
     --bg-color-blockquote: #2c2c30;
     --bg-color-hover-categories: #2e2e33;
+    --bg-color-hover-home-nav-buttons: #cdcdcd;
+    --border-hero: 0.1rem solid #979797;
+    --icon-subscribe-button: url(/image/email.svg);
+    --icon-theme-button: url(/image/light-mode.svg);
+    --icon-search-button: url(/image/search.svg);
+    --icon-burger-button: url(/image/burger.svg);
+    --icon-facebook: url(/image/social-media/facebook.svg);
+    --icon-twitter: url(/image/social-media/twitter.svg);
+    --icon-instagram: url(/image/social-media/instagram.svg);
+    --icon-linkedin: url(/image/social-media/linkedin.svg);
+    --icon-submit: url(/image/submit-light.svg);
 }
 
 :root.light {
@@ -28,8 +39,20 @@
     --text-color-article-header: #f2f2f2;
     --text-color-link: #244cbb;
     --bg-color-primary: #ffffff;
-    --bg-color-secondary: #e6deff;
-    --bg-color-hover-categories: #2e2e33;
+    --bg-color-secondary: #f0f0f0;
+    --bg-color-blockquote: #c9c9c9;
+    --bg-color-hover-categories: #d4d4d4;
+    --bg-color-hover-home-nav-buttons: #cdcdcd;
+    --border-hero: none;
+    --icon-subscribe-button: url(/image/email-black.svg);
+    --icon-theme-button: url(/image/dark-mode.svg);
+    --icon-search-button: url(/image/search-black.svg);
+    --icon-burger-button: url(/image/burger-black.svg);
+    --icon-facebook: url(/image/social-media/facebook-black.svg);
+    --icon-twitter: url(/image/social-media/twitter-black.svg);
+    --icon-instagram: url(/image/social-media/instagram-black.svg);
+    --icon-linkedin: url(/image/social-media/linkedin-black.svg);
+    --icon-submit: url(/image/submit.svg);
 }
 
 .theme-transition {
@@ -128,12 +151,12 @@ header > button {
 }
 
 header > .search-button {
-    background-image: url(/image/search.svg);
+    background-image: var(--icon-search-button);
 }
 
 
 header > .burger-menu {
-    background-image: url(/image/burger2.svg);
+    background-image: var(--icon-burger-button);
 }
 
 header > #logo > a {
@@ -149,15 +172,20 @@ header > ul, header > .subscribe-button, header > .night-mode {
 
 /***********************************************/
 
+@keyframes search-bar {
+    0% {transform: translate(-50%, -500%);}
+    100% {transform: translate(-50%, 0);}
+}
+
 #search-bar-container {
     display: none;
 
     position: fixed;
     top: 15rem;
     left: 50%;
-    transform: translate(-50%, 0);
 
     z-index: 1;
+    animation: search-bar 0.25s forwards;
 }
 
 #search-bar {
@@ -216,7 +244,7 @@ header > ul, header > .subscribe-button, header > .night-mode {
 
     width: 23rem;
     height: 100vh;
-    background-color: var(--bg-color-secondary);
+    background-color: #1a1a1d;
 
     animation-name: mobileMenuSlide;
     animation-duration: 0.5s;
@@ -248,7 +276,7 @@ header > ul, header > .subscribe-button, header > .night-mode {
     font-size: 2.25rem;
     display: block;
     padding: 0.7rem 0 0.7rem 2.5rem;
-    color: var(--text-color-primary);
+    color: #cdcdcd;
 }
 
 #mobile-menu > ul > li > button {
@@ -257,6 +285,7 @@ header > ul, header > .subscribe-button, header > .night-mode {
     padding: 0.7rem 0 0.7rem 2.5rem;
     width: 100%;
     text-align: start;
+    color: #cdcdcd;
 }
 
 #mobile-menu #mobile-categories-list {
@@ -275,7 +304,7 @@ header > ul, header > .subscribe-button, header > .night-mode {
 
 #mobile-menu #mobile-categories-list a {
     font-size: 2.05rem;
-    color: var(--text-color-secondary);
+    color: #cdcdcd;
     display: block;
     padding: 0.3rem 0;
 }
@@ -290,11 +319,12 @@ header > ul, header > .subscribe-button, header > .night-mode {
     height: 3.65rem;
     gap: 0.8rem;
     font-size: 2.15rem;
-    border: 1px solid var(--text-color-secondary);
+    border: 1px solid #cdcdcd;
     border-radius: 1rem;
     margin: auto;
     padding: 0.7rem 0;
     margin-bottom: 2rem;
+    color: #cdcdcd;
 }
 
 #mobile-menu > .text-icon-button:nth-child(3) > img {
@@ -305,15 +335,30 @@ header > ul, header > .subscribe-button, header > .night-mode {
     font-size: 2.25rem;
     font-weight: 400;
     text-align: center;
-    color: var(--text-color-primary);
+    color: #cdcdcd;
     margin-top: 4rem;
 }
 
 #mobile-menu > div.social-media-links {
     gap: 0;
     justify-content: space-evenly;
-
     margin-top: 1.5rem;
+}
+
+#mobile-menu > .social-media-links > a:nth-child(1) {
+    background-image: url(/image/social-media/facebook.svg);
+}
+
+#mobile-menu > .social-media-links > a:nth-child(2) {
+    background-image: url(/image/social-media/twitter.svg);
+}
+
+#mobile-menu > .social-media-links > a:nth-child(3) {
+    background-image: url(/image/social-media/instagram.svg);
+}
+
+#mobile-menu > .social-media-links > a:nth-child(4) {
+    background-image: url(/image/social-media/linkedin.svg);
 }
 
 @keyframes mobileMenuSlide {
@@ -370,7 +415,7 @@ footer > #subscribe > form > #submit {
     width: 4rem;
     cursor: pointer;
 
-    background-image: url(/image/submit-light.svg);
+    background-image: var(--icon-submit);
     background-size: 2rem;
 }
 
@@ -393,19 +438,19 @@ footer #submit:hover {
 } 
 
 .social-media-links > a:nth-child(1) {
-    background-image: url(/image/social-media/facebook.svg);
+    background-image: var(--icon-facebook);
 }
 
 .social-media-links > a:nth-child(2) {
-    background-image: url(/image/social-media/twitter.svg);
+    background-image: var(--icon-twitter);
 }
 
 .social-media-links > a:nth-child(3) {
-    background-image: url(/image/social-media/instagram.svg);
+    background-image: var(--icon-instagram);
 }
 
 .social-media-links > a:nth-child(4) {
-    background-image: url(/image/social-media/linkedin.svg);
+    background-image: var(--icon-linkedin);
 }
 
 #quick-links ul {
@@ -614,15 +659,14 @@ footer #submit:hover {
     header > .subscribe-button {
         border: 0.1rem solid var(--text-color-tertiary);
         border-radius: 1rem;
-        padding: 0.5rem;
-
-        width: 11rem;
-        height: 2.5rem;
+        padding: 0.5rem 1rem 0.5rem 3.5rem;
         grid-column: 4 / 5;
-
-        display: flex;
-        gap: 0.75rem;
-
+        background: var(--icon-subscribe-button) no-repeat;
+        background-size: 1.8rem;
+        background-position: 1rem center;
+        width: max-content;
+        line-height: 1rem;
+        display: unset;
         font-size: 1.2rem;
     }
 
@@ -631,7 +675,7 @@ footer #submit:hover {
     }
 
     header > #light-mode-button {
-        background-image: url(/image/light-mode.svg);
+        background-image: var(--icon-theme-button);
     }
 
     header > button {

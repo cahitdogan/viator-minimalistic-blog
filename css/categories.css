@@ -8,8 +8,8 @@ h2 {
     font-size: 2.5rem;
     font-weight: 400;
     letter-spacing: 0.7rem;
-    border-bottom: 1px solid var(--Gray);
-
+    border-bottom: 1px solid var(--text-color-secondary);
+    color: var(--text-color-primary);
     margin-top: 4rem;
     margin-bottom: 1.5rem;
 }
@@ -41,13 +41,13 @@ h2 {
 
 #articles-grid > article > p {
     font-size: 1.9rem;
-    color: var(--Gray);
+    color: var(--text-color-secondary);
 }
 
 #articles-grid > article > time {
     font-size: 1.45rem;
     font-weight: 300;
-    color: var(--White);
+    color: var(--text-color-tertiary);
 }
 
 /***********************************************/

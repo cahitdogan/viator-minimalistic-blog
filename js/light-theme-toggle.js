@@ -1,7 +1,9 @@
 let currentTheme = localStorage.getItem("theme") || "dark";
 document.addEventListener("DOMContentLoaded", function () {
-    const bodyElement = document.body;
-    bodyElement.classList.add("theme-transition");
+    setTimeout(function () {
+        const bodyElement = document.body;
+        bodyElement.classList.add("theme-transition");
+      }, 300);
 });
 
 function pickTheme() {

@@ -4,10 +4,11 @@ main > #author-pfp {
     margin: 2.5rem auto 2rem auto;
 }
 
-main > h1 {
+main > h2 {
     font-size: 3.4rem;
     font-weight: 300;
     text-align: center;
+    color: var(--text-color-primary);
 }
 
 main > div#job {
@@ -15,13 +16,7 @@ main > div#job {
     font-style: italic;
     text-align: center;
     margin-bottom: 5rem;
-}
-
-main > h2 {
-    text-align: center;
-    font-weight: 600;
-    font-size: 2.4rem;
-    margin-bottom: 1.5rem;
+    color: var(--text-color-primary);
 }
 
 main > #social-media-link-buttons {
@@ -29,12 +24,12 @@ main > #social-media-link-buttons {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
 }
 
 main > #social-media-link-buttons > a {
     width: 100%;
-    border: 1px solid var(--LightGray);
+    border: 1px solid var(--text-color-primary);
     border-radius: 0.8rem;
     padding: 0.8rem 0;
 
@@ -48,40 +43,46 @@ main > #social-media-link-buttons > a {
 }
 
 main > #social-media-link-buttons > a:hover {
-    box-shadow: 0 0 1rem var(--LightGray);
+    box-shadow: 0 0 1rem var(--text-color-primary);
 }
 
 main > #social-media-link-buttons > a:nth-child(1) {
-    background-image: url(/image/social-media/instagram.svg);
+    background-image: var(--icon-instagram);
 }
 
 main > #social-media-link-buttons > a:nth-child(2) {
-    background-image: url(/image/social-media/twitter.svg);
+    background-image: var(--icon-twitter);
 }
 
 main > #social-media-link-buttons > a:nth-child(3) {
-    background-image: url(/image/social-media/linkedin.svg);
+    background-image: var(--icon-linkedin);
 }
 
 main > #social-media-link-buttons > a:nth-child(4) {
-    background-image: url(/image/social-media/facebook.svg);
+    background-image: var(--icon-facebook);
 }
 
 main > #about-me-container {
     margin-bottom: 2rem;
 }
 
-main > #about-me-container > h2 {
+h3 {
     font-size: 2.4rem;
-    border-bottom: 1px solid var(--Gray);
-    padding-bottom: 0.25rem;
+    color: var(--text-color-primary);
     margin-bottom: 1rem;
+    text-align: center;
+}
+
+main > #about-me-container > h3 {
+    border-bottom: 1px solid var(--text-color-secondary);
+    padding-bottom: 0.25rem;
 }
 
 main > #about-me-container > p {
     font-size: 1.95rem;
     font-weight: 300;
     margin-bottom: 1.5rem;
+    color: var(--text-color-primary);
 }
 
 @media screen and (width >= 650px) {

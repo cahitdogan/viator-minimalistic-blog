@@ -9,7 +9,7 @@ main > ul {
 main > ul > li > a {
     display: block;
     padding: 1rem;
-    border: 1px solid var(--Gray);
+    border: 1px solid var(--text-color-primary);
     text-align: center;
     border-radius: 0.5rem;
     font-size: 1.5rem;
@@ -17,5 +17,5 @@ main > ul > li > a {
 }
 
 main > ul > li > a:hover {
-    background-color: #232327;
+    background-color: var(--bg-color-hover-categories);
 }

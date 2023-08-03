@@ -78,8 +78,8 @@ main > nav > button {
 }
 
 main > nav > button:hover {
-    background-color: var(--text-color-primary);
-    color: var(--bg-color-primary);
+    background-color: #cdcdcd;;
+    color: #151516;
 }
 
 /***********************************************/
@@ -90,7 +90,7 @@ main > nav > button:hover {
         display: block;
         margin-bottom: 6rem;
         margin-top: 1rem;
-        border: 0.1rem solid var(--text-color-secondary);
+        border: var(--border-hero);
         border-radius: 1.1rem;
     }
 
