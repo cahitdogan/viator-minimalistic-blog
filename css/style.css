@@ -173,7 +173,7 @@ header > ul, header > .subscribe-button, header > .night-mode {
 /***********************************************/
 
 @keyframes search-bar {
-    0% {transform: translate(-50%, -200%);}
+    0% {transform: translate(-50%, -100%);}
     100% {transform: translate(-50%, 0);}
 }
 
@@ -185,7 +185,7 @@ header > ul, header > .subscribe-button, header > .night-mode {
     left: 50%;
 
     z-index: 1;
-    animation: search-bar 0.25s forwards;
+    animation: search-bar 0.35s forwards;
 }
 
 #search-bar {
