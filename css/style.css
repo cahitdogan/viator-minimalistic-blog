@@ -173,7 +173,7 @@ header > ul, header > .subscribe-button, header > .night-mode {
 /***********************************************/
 
 @keyframes search-bar {
-    0% {transform: translate(-50%, -500%);}
+    0% {transform: translate(-50%, -200%);}
     100% {transform: translate(-50%, 0);}
 }
 
