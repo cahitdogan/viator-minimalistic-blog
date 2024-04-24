@@ -20,6 +20,7 @@
     --bg-color-blockquote: #2c2c30;
     --bg-color-hover-categories: #2e2e33;
     --bg-color-hover-home-nav-buttons: #cdcdcd;
+    --shadow-color-header: #0a0a0a;
     --border-hero: 0.1rem solid #979797;
     --icon-subscribe-button: url(/image/email.svg);
     --icon-theme-button: url(/image/light-mode.svg);
@@ -43,6 +44,7 @@
     --bg-color-blockquote: #c9c9c9;
     --bg-color-hover-categories: #d4d4d4;
     --bg-color-hover-home-nav-buttons: #cdcdcd;
+    --shadow-color-header: #cecece;
     --border-hero: none;
     --icon-subscribe-button: url(/image/email-black.svg);
     --icon-theme-button: url(/image/dark-mode.svg);
@@ -84,10 +86,14 @@ html {
 body {
     background-color: var(--bg-color-primary);
     min-height: 100vh;
+    margin: auto;
+    transition: unset;
+}
+
+main {
     width: 92vw;
     max-width: 115rem;
     margin: auto;
-    transition: unset;
 }
 
 img {
@@ -107,19 +113,20 @@ input::placeholder {
     color: var(--text-color-secondary);
 }
 
+input[type="submit"] {
+    cursor: pointer;
+}
+
 ol, ul {
     list-style-type: none;
 }
 
 button {
     cursor: pointer;
-}
-
-a {
     color: var(--text-color-primary);
 }
 
-button {
+a {
     color: var(--text-color-primary);
 }
 
@@ -137,43 +144,58 @@ button {
 }
 
 /***********************************************/
-
 header {
+    width: 100%;
+    background-color: var(--bg-color-primary);
+}
+
+header > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 7.5rem;
+    width: 92vw;
+    max-width: 115rem;
+    height: 6.2rem;
+    margin: auto;
+    transition: height 0.5s, background-color 0.5s, box-shadow 0.5s;
 }
 
-header > button {
+.fixed {
+    position: sticky;
+    top: 0;
+    box-shadow: 0rem 0.2rem 1.3rem var(--shadow-color-header);
+    margin: 0;
+}
+
+header > .container > button {
     width: 2rem;
     height: 2rem;
 }
 
-header > .search-button {
+header > .container > .search-button {
     background-image: var(--icon-search-button);
 }
 
 
-header > .burger-menu {
+header > .container > .burger-menu {
     background-image: var(--icon-burger-button);
 }
 
-header > #logo > a {
+header > .container > #logo > a {
     font-size: 1.9rem;
     font-weight: 700;
     letter-spacing: 0.4rem;
     color: var(--text-color-primary);
 }
 
-header > ul, header > .subscribe-button, header > .night-mode {
+header > .container > ul, header > .container > .subscribe-button, header > .container > .night-mode {
     display: none;
 }
 
 /***********************************************/
 
 @keyframes search-bar {
-    0% {transform: translate(-50%, -100%);}
+    0% {transform: translate(-50%, -200%);}
     100% {transform: translate(-50%, 0);}
 }
 
@@ -185,7 +207,7 @@ header > ul, header > .subscribe-button, header > .night-mode {
     left: 50%;
 
     z-index: 1;
-    animation: search-bar 0.35s forwards;
+    animation: search-bar 0.25s forwards;
 }
 
 #search-bar {
@@ -368,10 +390,70 @@ header > ul, header > .subscribe-button, header > .night-mode {
 
 /***********************************************/
 
+#subscribe-popup {
+    display: none;
+
+    position: fixed;
+    top: 17rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    
+    width: 95vw;
+    max-width: 50rem;
+    border-radius: 2rem;
+    background: var(--bg-color-primary);
+}
+
+#subscribe-popup > p {
+    color: var(--text-color-tertiary);
+    font-size: 2.7rem;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#subscribe-popup > p:nth-child(2) {
+    color: var(--text-color-secondary);
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0 2rem;
+}
+
+#subscribe-popup > input[type="email"] {
+    width: 90%;
+    display: block;
+    margin: 3rem auto 2rem auto;
+    height: 4rem;
+    background-color: rgb(255, 255, 255);
+    border: 1.2px solid rgb(165, 165, 165);
+    border-radius: 0.2rem;
+    padding-left: 1rem;
+}
+
+#subscribe-popup > input[type="submit"] {
+    width: 10rem;
+    display: block;
+    margin: 2rem auto 2rem auto;
+    height: 3.8rem;
+    background-color: var(--bg-color-hover-categories);
+    border-radius: 0.2rem;
+    color: var(--text-color-tertiary);
+    font-size: 1.7rem;
+}
+
+/***********************************************/
+
 footer {
     display: flex;
     flex-direction: column;
     gap: 3.5rem;
+    width: 92vw;
+    max-width: 115rem;
+    margin: auto;
 
     padding: 2rem 0;
 
@@ -508,12 +590,12 @@ footer #submit:hover {
 
 @media screen and (width >= 650px) {
 
-    header > #logo > a {
+    header > .container > #logo > a {
         font-size: 2.5rem;
-        line-height: 2.5rem;
+        line-height: 4.5rem;
     }
 
-    header > button {
+    header > .container > button {
         width: 2.35rem;
         height: 2.35rem;
     }    
@@ -548,44 +630,44 @@ footer #submit:hover {
 
 @media screen and (width >= 992px) {
 
-    header > ul, header > #light-mode-button {
+    header > .container > ul, header > .container > #light-mode-button {
         display: unset;
     }
 
-    header > .burger-menu {
+    header > .container > .burger-menu {
         display: none;
     }
 
-    header {
+    header > .container {
         display: grid;
         grid-template-columns: 5fr 13fr 8fr 4.5fr 1.2fr 1.2fr ;
         column-gap: 0.5rem;
     }
 
-    header > #logo {
+    header > .container > #logo {
         order: -1;
     }
 
-    header > #logo > a {
+    header > .container > #logo > a {
         font-weight: 600;
     }
 
-    header > .search-button {
+    header > .container > .search-button {
         order: 1;
     }
 
-    header > ul {
+    header > .container > ul {
         display: flex;
         gap: 1.8vw;
     }
 
-    header > ul > li > a {
+    header > .container > ul > li > a {
         font-size: 1.25rem;
         padding: 1rem 0;
         position: relative;
     }
 
-    header > ul > li > a::after {
+    header > .container > ul > li > a::after {
         content: "";
         display: block;
 
@@ -599,21 +681,21 @@ footer #submit:hover {
         transition: 0.3s;
     }
 
-    header > ul a:hover::after {
+    header > .container > ul a:hover::after {
         width: 100%;
     }
 
-    header > ul > li > span {
+    header > .container > ul > li > span {
         font-size: 1.25rem;
         padding: 1.3rem 0;
         color: var(--text-color-primary);
     }
 
-    header #flyout-menu-container {
+    header > .container #flyout-menu-container {
         position: relative;
     }
     
-    header #flyout-menu {
+    header > .container #flyout-menu {
         display: none;
         width: 20rem;
         border-radius: 0.8rem;
@@ -630,33 +712,33 @@ footer #submit:hover {
         z-index: 1;
     }
     
-    header #flyout-menu-container:hover > #flyout-menu {
+    header > .container #flyout-menu-container:hover > #flyout-menu {
         display: block;
     }
     
-    header #flyout-menu-container:hover > #flyout-menu:hover {
+    header > .container #flyout-menu-container:hover > #flyout-menu:hover {
         display: block;
     }
     
-    header #flyout-menu > li > a {
+    header > .container #flyout-menu > li > a {
         display: block;
         font-size: 1.7rem;
         padding: 0.7rem 0;
     }
     
-    header #flyout-menu > li > a:hover {
+    header > .container #flyout-menu > li > a:hover {
         background-color: var(--bg-color-hover-categories);
     }
 
-    header #flyout-menu > li:first-child > a:hover {
+    header > .container #flyout-menu > li:first-child > a:hover {
         border-radius: 0.75rem 0.75rem 0 0 !important;
     }
     
-    header #flyout-menu > li:last-child > a:hover {
+    header > .container #flyout-menu > li:last-child > a:hover {
         border-radius: 0 0 0.75rem 0.75rem !important;
     }
 
-    header > .subscribe-button {
+    header > .container > .subscribe-button {
         border: 0.1rem solid var(--text-color-tertiary);
         border-radius: 1rem;
         padding: 0.5rem 1rem 0.5rem 3.5rem;
@@ -670,19 +752,19 @@ footer #submit:hover {
         font-size: 1.2rem;
     }
 
-    header > .subscribe-button > img#light-theme-subscribe-button-svg {
+    header > .container > .subscribe-button > img#light-theme-subscribe-button-svg {
         display: none;
     }
 
-    header > #light-mode-button {
+    header > .container > #light-mode-button {
         background-image: var(--icon-theme-button);
     }
 
-    header > button {
+    header > .container > button {
         justify-self: center;
     }
 
-    header > button:hover {
+    header > .container > button:hover {
         filter: brightness(65%);
     }
 

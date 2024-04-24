@@ -1,4 +1,7 @@
 function openerWithClickBlocker(elementId) {
+    if (elementId === "subscribe-popup") {
+        closerWithClickBlocker("mobile-menu");
+    }
     const elementToOpen = document.getElementById(elementId);
     elementToOpen.style.display = "block";
 
@@ -32,7 +35,7 @@ button.addEventListener("click", function () {
 
 
 
-//**************************------PAGINATION------**************************
+/**************************------PAGINATION------**************************/
 
 let currentPage = 1;
 
