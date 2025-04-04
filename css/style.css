@@ -22,15 +22,15 @@
     --bg-color-hover-home-nav-buttons: #cdcdcd;
     --shadow-color-header: #0a0a0a;
     --border-hero: 0.1rem solid #979797;
-    --icon-subscribe-button: url(/image/email.svg);
-    --icon-theme-button: url(/image/light-mode.svg);
-    --icon-search-button: url(/image/search.svg);
-    --icon-burger-button: url(/image/burger.svg);
-    --icon-facebook: url(/image/social-media/facebook.svg);
-    --icon-twitter: url(/image/social-media/twitter.svg);
-    --icon-instagram: url(/image/social-media/instagram.svg);
-    --icon-linkedin: url(/image/social-media/linkedin.svg);
-    --icon-submit: url(/image/submit-light.svg);
+    --icon-subscribe-button: url(../image/email.svg);
+    --icon-theme-button: url(../image/light-mode.svg);
+    --icon-search-button: url(../image/search.svg);
+    --icon-burger-button: url(../image/burger.svg);
+    --icon-facebook: url(../image/social-media/facebook.svg);
+    --icon-twitter: url(../image/social-media/twitter.svg);
+    --icon-instagram: url(../image/social-media/instagram.svg);
+    --icon-linkedin: url(../image/social-media/linkedin.svg);
+    --icon-submit: url(../image/submit-light.svg);
 }
 
 :root.light {
@@ -46,15 +46,15 @@
     --bg-color-hover-home-nav-buttons: #cdcdcd;
     --shadow-color-header: #cecece;
     --border-hero: none;
-    --icon-subscribe-button: url(/image/email-black.svg);
-    --icon-theme-button: url(/image/dark-mode.svg);
-    --icon-search-button: url(/image/search-black.svg);
-    --icon-burger-button: url(/image/burger-black.svg);
-    --icon-facebook: url(/image/social-media/facebook-black.svg);
-    --icon-twitter: url(/image/social-media/twitter-black.svg);
-    --icon-instagram: url(/image/social-media/instagram-black.svg);
-    --icon-linkedin: url(/image/social-media/linkedin-black.svg);
-    --icon-submit: url(/image/submit.svg);
+    --icon-subscribe-button: url(../image/email-black.svg);
+    --icon-theme-button: url(../image/dark-mode.svg);
+    --icon-search-button: url(../image/search-black.svg);
+    --icon-burger-button: url(../image/burger-black.svg);
+    --icon-facebook: url(../image/social-media/facebook-black.svg);
+    --icon-twitter: url(../image/social-media/twitter-black.svg);
+    --icon-instagram: url(../image/social-media/instagram-black.svg);
+    --icon-linkedin: url(../image/social-media/linkedin-black.svg);
+    --icon-submit: url(../image/submit.svg);
 }
 
 .theme-transition {
@@ -218,7 +218,7 @@ header > .container > ul, header > .container > .subscribe-button, header > .con
     border-radius: 0.6rem;
     box-shadow: 0 0.2rem 0.5rem var(--DarkGray);
 
-    background-image: url(/image/search-black.svg);
+    background-image: url(../image/search-black.svg);
     background-size: 2.2rem;
     background-position: 1.25rem 50%;
     padding-left: 4.5rem;
@@ -232,7 +232,7 @@ header > .container > ul, header > .container > .subscribe-button, header > .con
     border-radius: 0.6rem;
     cursor: pointer;
 
-    background-image: url(/image/submit.svg);
+    background-image: url(../image/submit.svg);
     background-color: white;
     background-size: 2.1rem;
 

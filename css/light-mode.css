@@ -19,21 +19,21 @@ body {
 }
 
 header > #light-mode-button {
-    background-image: url(/image/dark-mode.svg) !important;
+    background-image: url(../image/dark-mode.svg) !important;
 }
 
 header > #search-button {
-    background-image: url(/image/search-black.svg) !important;
+    background-image: url(../image/search-black.svg) !important;
 }
 
 header > .burger-menu {
-    background-image: url(/image/burger-black.svg) !important;
+    background-image: url(../image/burger-black.svg) !important;
 }
 
 #search-bar {
     background-color: white !important;
     box-shadow: 0 0.3rem 0.6rem rgb(27, 27, 27) !important;
-    background-image: url(/image/search-black.svg) !important;
+    background-image: url(../image/search-black.svg) !important;
 }
 
 #search-bar-container > input.icon-button {
@@ -61,7 +61,7 @@ footer #email {
 }
 
 footer > #subscribe #submit {
-    background-image: url(/image/submit.svg) !important;
+    background-image: url(../image/submit.svg) !important;
 }
 
 #mobile-menu {
@@ -77,19 +77,19 @@ footer > #subscribe #submit {
 }
 
 .social-media-links:not(#mobile-social-media-links) > a:nth-child(1) {
-    background-image: url(/image/social-media/facebook-black.svg) !important;
+    background-image: url(../image/social-media/facebook-black.svg) !important;
 }
 
 .social-media-links:not(#mobile-social-media-links) > a:nth-child(2) {
-    background-image: url(/image/social-media/twitter-black.svg) !important;
+    background-image: url(../image/social-media/twitter-black.svg) !important;
 }
 
 .social-media-links:not(#mobile-social-media-links) > a:nth-child(3) {
-    background-image: url(/image/social-media/instagram-black.svg) !important;
+    background-image: url(../image/social-media/instagram-black.svg) !important;
 }
 
 .social-media-links:not(#mobile-social-media-links) > a:nth-child(4) {
-    background-image: url(/image/social-media/linkedin-black.svg) !important;
+    background-image: url(../image/social-media/linkedin-black.svg) !important;
 }
 
 #blog-post-section a {
@@ -101,19 +101,19 @@ main > #social-media-link-buttons > a:hover {
 }
 
 main > #social-media-link-buttons > a:nth-child(1) {
-    background-image: url(/image/social-media/instagram-black.svg) !important;
+    background-image: url(../image/social-media/instagram-black.svg) !important;
 }
 
 main > #social-media-link-buttons > a:nth-child(2) {
-    background-image: url(/image/social-media/twitter-black.svg) !important;
+    background-image: url(../image/social-media/twitter-black.svg) !important;
 }
 
 main > #social-media-link-buttons > a:nth-child(3) {
-    background-image: url(/image/social-media/linkedin-black.svg) !important;
+    background-image: url(../image/social-media/linkedin-black.svg) !important;
 }
 
 main > #social-media-link-buttons > a:nth-child(4) {
-    background-image: url(/image/social-media/facebook-black.svg) !important;
+    background-image: url(../image/social-media/facebook-black.svg) !important;
 }
 
 main#categories-list-mobile > ul > li > a:hover {

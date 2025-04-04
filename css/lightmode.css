@@ -101,12 +101,12 @@ header > button {
 }
 
 header > .search-button {
-    background-image: url(/image/search-black.svg);
+    background-image: url(../image/search-black.svg);
 }
 
 
 header > .burger-menu {
-    background-image: url(/image/burger-black.svg);
+    background-image: url(../image/burger-black.svg);
 }
 
 header > #logo > a {
@@ -140,7 +140,7 @@ header > ul, header > .subscribe-button, header > .night-mode {
     border-radius: 0.6rem;
     box-shadow: 0 0.3rem 0.6rem black;
 
-    background-image: url(/image/search-black.svg);
+    background-image: url(../image/search-black.svg);
     background-size: 2.2rem;
     background-position: 1.25rem 50%;
     padding-left: 4.5rem;
@@ -154,7 +154,7 @@ header > ul, header > .subscribe-button, header > .night-mode {
     border-radius: 0.6rem;
     cursor: pointer;
 
-    background-image: url(/image/submit.svg);
+    background-image: url(../image/submit.svg);
     background-color: white;
     background-size: 2.1rem;
 
@@ -199,7 +199,7 @@ header > ul, header > .subscribe-button, header > .night-mode {
     width: 2rem;
     height: 2rem;
 
-    background-image: url(/image/kapat.svg);
+    background-image: url(../image/kapat.svg);
 
     margin: 1.5rem 1.2rem 3.5rem auto;
 }
@@ -340,7 +340,7 @@ footer > #subscribe > form > #submit {
     width: 4rem;
     cursor: pointer;
 
-    background-image: url(/image/submit-light.svg);
+    background-image: url(../image/submit-light.svg);
     background-size: 2rem;
 }
 
@@ -363,19 +363,19 @@ footer #submit:hover {
 } 
 
 .social-media-links > a:nth-child(1) {
-    background-image: url(/image/social-media/facebook.svg);
+    background-image: url(../image/social-media/facebook.svg);
 }
 
 .social-media-links > a:nth-child(2) {
-    background-image: url(/image/social-media/twitter.svg);
+    background-image: url(../image/social-media/twitter.svg);
 }
 
 .social-media-links > a:nth-child(3) {
-    background-image: url(/image/social-media/instagram.svg);
+    background-image: url(../image/social-media/instagram.svg);
 }
 
 .social-media-links > a:nth-child(4) {
-    background-image: url(/image/social-media/linkedin.svg);
+    background-image: url(../image/social-media/linkedin.svg);
 }
 
 #quick-links ul {
@@ -596,7 +596,7 @@ footer #submit:hover {
     }
 
     header > #light-mode-button {
-        background-image: url(/image/dark-mode.svg);
+        background-image: url(../image/dark-mode.svg);
     }
 
     header > button {
