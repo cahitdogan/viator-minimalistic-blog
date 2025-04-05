@@ -10,8 +10,8 @@
     <meta name="author" content="Cahit Doğan">
     <meta name="description" content="Blog Admin Panel">
 
-    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/panel.css">
+    <link rel="stylesheet" href="css/login.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,18 @@
 
     <main>
         <section id="login-container">
-            
+            <h2>Login</h2>
+            <form>
+                <label>
+                    Email
+                    <input type="email" id="email">
+                </label>
+                <label>
+                    Password
+                    <input type="password" id="password">
+                </label>
+                <button type="button">Login</button>
+            </form>
         </section>
     </main>
 
@@ -51,7 +62,7 @@
     </section>
 
 
-    <script src="js/panel.js"></script>
+    <script type="module" src="js/panel.js"></script>
 </body>
 
 </html> 
