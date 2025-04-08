@@ -20,6 +20,41 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+
+    div {
+        @media (width < 992px) {
+            display: none;
+        }
+
+        a {
+            @media (width > 992px) {
+                font-size: 1.5rem;
+                display: unset;
+            }
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            padding: 1rem;
+            font-size: 1.6rem;
+            border: 1px solid #cdcdcd;
+            border-radius: 1rem;
+            margin-left: 1rem;
+        }
+
+        button:hover {
+            background-color: #27272b;
+        }
+    }
+
+    > button {
+        @media (width > 992px) {
+            display: none;
+        }
+    }
 }
 
 button {
