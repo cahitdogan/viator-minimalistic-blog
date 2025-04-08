@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cahit Doğan">
+    <meta name="description" content="Dashboard">
+
+    <link rel="stylesheet" href="css/panel.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/c20cb8ddc9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <h1 id="logo">ADMIN PANEL</h1>
+        <div>
+            <a href="../index.html">Back To Home</a>
+            <button type="button">Logout</a>
+        </div>
+        <button id="burger-button" type="button"><i class="fa-solid fa-bars" style="color: #cdcdcd; font-size: 2rem;"></i></button>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Menu</h2>
+            <ul>
+                <li style="font-size: 1.6rem; padding: 1rem; border-bottom: 0.1px solid #cdcdcd;">Dashboard</li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Add New Article</a></li>
+            </ul>
+        </aside>
+        <section id="articles-datas">
+            <div id="article-count-container">
+                <h3>Article Count</h3>
+                <!--Count-->
+            </div>
+        </section>
+    </main>
+
+    <section id="drawer-root">
+        <div id="drawer-backdrop"></div>
+        <div id="drawer">
+            <div id="top-container">
+                <button type="button"><i class="fa-solid fa-xmark" style="color: #cdcdcd; font-size: 3rem;"></i></button>
+            </div>
+            <ul id="navigation-container">
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <script type="module" src="js/isLoggedIn.js"></script>
+    <script type="module" src="js/panel.js"></script>
+    <script type="module" src="js/dashboard.js"></script>
+    <script type="module" src="js/logout.js"></script>
+</body>
+</html>
