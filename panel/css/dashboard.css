@@ -1,0 +1,28 @@
+main {
+    display: flex;
+    min-height: calc(100vh - 6.7rem);
+}
+
+aside {
+    border-width: 0.1px 0.1px 0 0;
+    border-style: solid;
+    border-color: #cdcdcd;
+    width: 22rem;
+
+    h2 {
+        padding: 1rem;
+        font-size: 2.2rem;
+        border-bottom: 3px solid #cdcdcd;
+    }
+
+    li:hover {
+        background-color: #2e2e33;
+    }
+
+    a {
+        display: block;
+        font-size: 1.6rem;
+        padding: 1.2rem 1rem;
+        border-bottom: 0.1px solid #cdcdcd;
+    }
+}
